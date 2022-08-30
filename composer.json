@@ -1,0 +1,16 @@
+{
+    "name": "jhonycreativo/creative",
+    "description": "My personal utilities",
+    "autoload": {
+        "psr-4": {
+            "Jhonycreativo\\Creative\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Jhony Creativo",
+            "email": "jhonycreativo.code@gmail.com"
+        }
+    ],
+    "require": {}
+}
