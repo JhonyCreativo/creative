@@ -254,7 +254,7 @@ class FacturacionElectronica
     }
     public function set_items($val=array())
     {
-        $this->items = $var;
+        $this->items = $val;
     }
 
     public function emitir()
@@ -278,12 +278,8 @@ class FacturacionElectronica
         curl_close($ch);
 
         $leer_respuesta = json_decode($respuesta, true);
-        if (isset($leer_respuesta['errors'])) {
-            //Mostramos los errores si los hay
-            return $leer_respuesta['errors'];
-        } else {
-            return $leer_respuesta;
-        }
+
+        return $leer_respuesta;
     }
     public function formatoComprobante()
     {
